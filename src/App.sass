@@ -1,0 +1,117 @@
+$primary-color: #B7A0E0
+$secondry-color: #fff
+$third-color: #9575CD
+$fourth-color: #FFC107
+
+
+body
+    background-color: $primary-color  
+.container
+    height: 100vh
+    display: flex
+    align-items: center
+    flex-direction: column
+    margin-top: 15fvh
+    gap: 30px
+    &-logoTitle
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 10px
+        margin-top: 30px
+        flex-wrap: wrap
+        img
+            max-width: 150px
+    &-title
+        display: flex
+        flex-direction: column
+        align-content: center
+        align-items: center
+        flex-wrap: wrap
+        text-align: center
+        color: $secondry-color
+        h1  
+            font-size: 4em
+            text-shadow: 0px 4px 4px rgba(0,0,0,0.5)
+        h2
+            font-size: 1.1em
+            text-shadow: 0px 4px 4px rgba(0,0,0,0.5)
+            font-weight: bold
+
+.busca
+    display: flex
+    position: relative
+    justify-content: center
+    align-items: center
+    input
+        border: none
+        background-color: $secondry-color
+        padding: 10px
+        border-radius: 2rem
+        height: 35px
+        width: 30vw
+        min-width: 300px
+        font-size: 1.2em
+        &:focus
+            box-shadow: 0 0 0 0
+            outline: 0
+        
+    img
+        width: 30px
+        height: 20px
+    button
+        background-color: $fourth-color
+        border-radius: 50%
+        width: 50px
+        height: 50px
+        border: none
+        position: absolute
+        right: 0
+        top: 100
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: all 0.5s
+        &:hover
+            cursor: pointer 
+            width: 52px
+            height: 52px
+            
+
+.info
+    background-color: $secondry-color
+    border-radius: 1.1em
+    color: black
+    width: 40vw
+    padding: 2.2em
+    min-width: 350px
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    flex-direction: column
+    gap: 5px
+    p
+        font-size: 1.2em
+        span
+            font-weight: bold
+    
+
+.infoEspecial
+    background-color: $secondry-color
+    border-radius: 1.1em
+    color: black
+    width: 30vw
+    padding: 2.2em
+    min-width: 350px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: row
+    gap: 15px
+    p
+        font-size: 1.2em
+        span
+            font-weight: bold
+    img
+        width: 50px
+        height: 50px
